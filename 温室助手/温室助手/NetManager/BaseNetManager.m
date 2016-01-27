@@ -1,9 +1,9 @@
 //
 //  BaseNetManager.m
-//  BaseProject
+//  温室助手
 //
-//  Created by tarena on 15/12/16.
-//  Copyright © 2015年 tarena. All rights reserved.
+//  Created by neusoftliang on 16/1/23.
+//  Copyright © 2016年 neusoftliang. All rights reserved.
 //
 
 #import "BaseNetManager.h"

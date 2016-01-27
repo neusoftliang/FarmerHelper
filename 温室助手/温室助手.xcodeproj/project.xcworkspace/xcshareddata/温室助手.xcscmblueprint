@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "94634DD7E790256323B597D248144591CE08BA23",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "94634DD7E790256323B597D248144591CE08BA23" : 0,
+    "8D80F90292E49E9894940EF49793C62247CDAE80" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B58D919E-4D16-40B3-BAFA-2B5061C42DE8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "94634DD7E790256323B597D248144591CE08BA23" : "FarmerHelper\/",
+    "8D80F90292E49E9894940EF49793C62247CDAE80" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "温室助手",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "温室助手\/温室助手.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/neusoftliang\/KUPAO.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8D80F90292E49E9894940EF49793C62247CDAE80"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/neusoftliang\/FarmerHelper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "94634DD7E790256323B597D248144591CE08BA23"
+    }
+  ]
+}
