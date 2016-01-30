@@ -13,6 +13,7 @@
 @interface WeatherListViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView_weather;
 @property (strong,nonatomic) HeaderScrollView *headerScroll;
+
 @end
 
 @implementation WeatherListViewController

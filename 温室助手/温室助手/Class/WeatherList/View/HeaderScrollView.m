@@ -8,10 +8,8 @@
 
 #import "HeaderScrollView.h"
 @interface HeaderScrollView()
-//@property (strong,nonatomic) UIView *view;
-//@property (strong,nonatomic) UIImageView *bgImageVC;
-//@property (strong,nonatomic) UIVisualEffectView *visualVC;
-//@property (strong,nonatomic) UILabel *detail_label;
+@property (strong,nonatomic) UIPageControl *page;
+@property (strong,nonatomic) NSTimer *timer;
 @end
 @implementation HeaderScrollView
 -(void)setIndex:(NSArray<Index *> *)index
@@ -57,11 +55,5 @@
     }
     self.contentSize = CGSizeMake(index.count*window.bounds.size.width, self.bounds.size.height);
 }
--(instancetype)initWithFrame:(CGRect)frame
-{
-    if (self = [super initWithFrame:frame]) {
-        
-    }
-    return self;
-}
+
 @end

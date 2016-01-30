@@ -189,7 +189,7 @@
 }
 #pragma mark --- 新闻详情跳转
 - (IBAction)newsBtnClick:(id)sender {
-    
+    [self performSegueWithIdentifier:@"news" sender:nil];
 }
 #pragma mark --- 天气详情跳转
 - (IBAction)weatherBtnClick:(id)sender {

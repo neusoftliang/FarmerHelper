@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NewsListCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="393"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="393"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="F9m-Nc-zUD">
+                        <rect key="frame" x="0.0" y="0.0" width="286" height="393"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </tableView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="F9m-Nc-zUD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4D1-SJ-fh2"/>
+                <constraint firstAttribute="bottom" secondItem="F9m-Nc-zUD" secondAttribute="bottom" id="R5V-Va-4Ev"/>
+                <constraint firstAttribute="trailing" secondItem="F9m-Nc-zUD" secondAttribute="trailing" id="bBA-1i-nx1"/>
+                <constraint firstItem="F9m-Nc-zUD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="k85-Be-36V"/>
+            </constraints>
+            <size key="customSize" width="286" height="393"/>
+            <connections>
+                <outlet property="newsListTable" destination="F9m-Nc-zUD" id="Kkf-lf-rhT"/>
+            </connections>
+            <point key="canvasLocation" x="120" y="398.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

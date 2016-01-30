@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0Ee-bd-q7O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0Ee-bd-q7O">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -26,7 +26,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QyB-WR-RjL" userLabel="View11">
                                         <rect key="frame" x="2" y="0.0" width="157" height="165"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="人人.png" translatesAutoresizingMaskIntoConstraints="NO" id="zH2-XY-FLz">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news.png" translatesAutoresizingMaskIntoConstraints="NO" id="zH2-XY-FLz">
                                                 <rect key="frame" x="0.0" y="0.0" width="157" height="165"/>
                                             </imageView>
                                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNo-La-QRm">
@@ -35,7 +35,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="157" height="65"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻内容" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feC-Ba-w8M">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feC-Ba-w8M">
                                                             <rect key="frame" x="5" y="5" width="147" height="55"/>
                                                             <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -54,13 +54,12 @@
                                             </visualEffectView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p56-AY-hmc">
                                                 <rect key="frame" x="0.0" y="0.0" width="157" height="165"/>
-                                                <state key="normal" title="button"/>
                                                 <connections>
                                                     <action selector="newsBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cc2-zg-xIc"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.058823529411764705" green="0.49803921568627452" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="p56-AY-hmc" firstAttribute="top" secondItem="QyB-WR-RjL" secondAttribute="top" id="66k-X7-gUY"/>
                                             <constraint firstAttribute="bottom" secondItem="QNo-La-QRm" secondAttribute="bottom" id="74t-Zz-W8t"/>
@@ -97,7 +96,7 @@
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K8t-f5-EbF">
                                                         <rect key="frame" x="0.0" y="1" width="157" height="21"/>
-                                                        <color key="backgroundColor" red="1" green="0.82198107210000004" blue="0.17546428950000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="Aay-R6-wm1"/>
                                                         </constraints>
@@ -107,14 +106,14 @@
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高低温" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ceS-Hu-b1f">
                                                         <rect key="frame" x="0.0" y="92" width="157" height="18"/>
-                                                        <color key="backgroundColor" red="1" green="0.82198107210000004" blue="0.17546428950000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="风向" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jc5-lH-MTE">
                                                         <rect key="frame" x="0.0" y="113" width="157" height="17.5"/>
-                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -340,11 +339,31 @@
                         <outlet property="titleScrollView" destination="ule-Ho-8cT" id="XHa-xY-dFT"/>
                         <outlet property="weatherDate_label" destination="K8t-f5-EbF" id="K8w-I5-PN8"/>
                         <segue destination="yUp-cY-83O" kind="push" identifier="weather" id="z19-7V-yI8"/>
+                        <segue destination="Trc-Q5-Zvt" kind="push" identifier="news" id="ptf-LN-GgW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="669" y="303"/>
+        </scene>
+        <!--农业新闻-->
+        <scene sceneID="jsU-nz-OAJ">
+            <objects>
+                <viewController id="Trc-Q5-Zvt" customClass="NewsListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="prZ-GU-IG7"/>
+                        <viewControllerLayoutGuide type="bottom" id="kU4-jz-mrz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GvM-NA-qWh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="农业新闻" id="RDI-dt-E15"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yOR-MZ-i5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="1028"/>
         </scene>
         <!--天气详情-->
         <scene sceneID="jok-JA-2XT">
@@ -360,7 +379,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="cGp-UU-vbC">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <sections/>
                                 <connections>
                                     <outlet property="dataSource" destination="yUp-cY-83O" id="dlQ-yh-H9U"/>
@@ -383,7 +402,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nE4-aE-vgh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="570" y="944"/>
+            <point key="canvasLocation" x="227" y="1028"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yRg-5e-NcE">
@@ -405,7 +424,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="news.png" width="144" height="144"/>
         <image name="undefined.png" width="70" height="57"/>
-        <image name="人人.png" width="53" height="53"/>
     </resources>
 </document>

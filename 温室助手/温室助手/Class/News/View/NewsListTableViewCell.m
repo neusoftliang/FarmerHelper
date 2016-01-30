@@ -1,14 +1,14 @@
 //
-//  FutureWeatherTableCell.m
+//  NewsListTableViewCell.m
 //  温室助手
 //
-//  Created by neusoftliang on 16/1/24.
+//  Created by neusoftliang on 16/1/29.
 //  Copyright © 2016年 neusoftliang. All rights reserved.
 //
 
-#import "FutureWeatherTableCell.h"
+#import "NewsListTableViewCell.h"
 
-@implementation FutureWeatherTableCell
+@implementation NewsListTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

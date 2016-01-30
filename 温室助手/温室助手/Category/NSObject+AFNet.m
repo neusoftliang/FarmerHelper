@@ -19,7 +19,6 @@
     [manager.requestSerializer setValue:@"cad019fe72bf309b500e493fff396287" forHTTPHeaderField: @"apikey"];
     [manager.requestSerializer setValue:@"text/html"forHTTPHeaderField:@"Content-Type"];
     return [manager GET:path parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"resp---afnet%@",responseObject);
         completionHandle(responseObject,nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completionHandle(nil,error);
