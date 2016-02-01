@@ -17,6 +17,18 @@
 		9D3AA0311C5A353C001D0223 /* WeatherNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3AA02F1C5A353C001D0223 /* WeatherNetManager.m */; };
 		9D3AA0341C5A377E001D0223 /* NewsNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3AA0331C5A377E001D0223 /* NewsNetManager.m */; };
 		9D3AA0381C5A44F0001D0223 /* NewsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D3AA0371C5A44F0001D0223 /* NewsListViewController.m */; };
+		9D518EEA1C5F11F80024B16D /* FaceppAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D518ED11C5F11F80024B16D /* FaceppAPI.m */; };
+		9D518EEB1C5F11F80024B16D /* FaceppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D518ED41C5F11F80024B16D /* FaceppClient.m */; };
+		9D518EEC1C5F11F80024B16D /* FaceppDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D518ED61C5F11F80024B16D /* FaceppDetection.m */; };
+		9D518EED1C5F11F80024B16D /* FaceppFaceset.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D518ED81C5F11F80024B16D /* FaceppFaceset.m */; };
+		9D518EEE1C5F11F80024B16D /* FaceppGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D518EDA1C5F11F80024B16D /* FaceppGroup.m */; };
+		9D518EEF1C5F11F80024B16D /* FaceppGrouping.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D518EDC1C5F11F80024B16D /* FaceppGrouping.m */; };
+		9D518EF01C5F11F80024B16D /* FaceppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D518EDE1C5F11F80024B16D /* FaceppInfo.m */; };
+		9D518EF11C5F11F80024B16D /* FaceppPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D518EE01C5F11F80024B16D /* FaceppPerson.m */; };
+		9D518EF21C5F11F80024B16D /* FaceppRecognition.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D518EE21C5F11F80024B16D /* FaceppRecognition.m */; };
+		9D518EF31C5F11F80024B16D /* FaceppTrainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D518EE41C5F11F80024B16D /* FaceppTrainer.m */; };
+		9D518EF41C5F11F80024B16D /* FaceppError.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D518EE71C5F11F80024B16D /* FaceppError.m */; };
+		9D518EF51C5F11F80024B16D /* FaceppResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D518EE91C5F11F80024B16D /* FaceppResult.m */; };
 		9D6F94DF1C533B8F0036A25A /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F94DE1C533B8F0036A25A /* WeatherModel.m */; };
 		9D6F94E31C5349790036A25A /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F94E21C5349790036A25A /* BaseNetManager.m */; };
 		9D6F94EE1C534ADC0036A25A /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F94E71C534ADC0036A25A /* Foundation+Log.m */; };
@@ -24,6 +36,7 @@
 		9D6F94F01C534ADC0036A25A /* NSObject+MJParse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F94EB1C534ADC0036A25A /* NSObject+MJParse.m */; };
 		9D6F94F11C534ADC0036A25A /* UIScrollView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F94ED1C534ADC0036A25A /* UIScrollView+Refresh.m */; };
 		9D6F94F41C53546F0036A25A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F94F31C53546F0036A25A /* MainViewController.m */; };
+		9D9D3AF61C5CCC4400F97A68 /* NewsShowTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D9D3AF51C5CCC4400F97A68 /* NewsShowTableViewController.m */; };
 		9DA11F481C559F0500D7FC33 /* GPSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA11F471C559F0500D7FC33 /* GPSManager.m */; };
 		9DA11F4B1C55BF5500D7FC33 /* CityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA11F4A1C55BF5500D7FC33 /* CityModel.m */; };
 		9DA11F961C55EEBE00D7FC33 /* undefined.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DA11F731C55EEBE00D7FC33 /* undefined.png */; };
@@ -94,6 +107,30 @@
 		9D3AA0331C5A377E001D0223 /* NewsNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsNetManager.m; sourceTree = "<group>"; };
 		9D3AA0361C5A44F0001D0223 /* NewsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsListViewController.h; path = ../NewsListViewController.h; sourceTree = "<group>"; };
 		9D3AA0371C5A44F0001D0223 /* NewsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsListViewController.m; path = ../NewsListViewController.m; sourceTree = "<group>"; };
+		9D518ED01C5F11F80024B16D /* FaceppAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppAPI.h; sourceTree = "<group>"; };
+		9D518ED11C5F11F80024B16D /* FaceppAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppAPI.m; sourceTree = "<group>"; };
+		9D518ED31C5F11F80024B16D /* FaceppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppClient.h; sourceTree = "<group>"; };
+		9D518ED41C5F11F80024B16D /* FaceppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppClient.m; sourceTree = "<group>"; };
+		9D518ED51C5F11F80024B16D /* FaceppDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppDetection.h; sourceTree = "<group>"; };
+		9D518ED61C5F11F80024B16D /* FaceppDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppDetection.m; sourceTree = "<group>"; };
+		9D518ED71C5F11F80024B16D /* FaceppFaceset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppFaceset.h; sourceTree = "<group>"; };
+		9D518ED81C5F11F80024B16D /* FaceppFaceset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppFaceset.m; sourceTree = "<group>"; };
+		9D518ED91C5F11F80024B16D /* FaceppGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppGroup.h; sourceTree = "<group>"; };
+		9D518EDA1C5F11F80024B16D /* FaceppGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppGroup.m; sourceTree = "<group>"; };
+		9D518EDB1C5F11F80024B16D /* FaceppGrouping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppGrouping.h; sourceTree = "<group>"; };
+		9D518EDC1C5F11F80024B16D /* FaceppGrouping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppGrouping.m; sourceTree = "<group>"; };
+		9D518EDD1C5F11F80024B16D /* FaceppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppInfo.h; sourceTree = "<group>"; };
+		9D518EDE1C5F11F80024B16D /* FaceppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppInfo.m; sourceTree = "<group>"; };
+		9D518EDF1C5F11F80024B16D /* FaceppPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppPerson.h; sourceTree = "<group>"; };
+		9D518EE01C5F11F80024B16D /* FaceppPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppPerson.m; sourceTree = "<group>"; };
+		9D518EE11C5F11F80024B16D /* FaceppRecognition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppRecognition.h; sourceTree = "<group>"; };
+		9D518EE21C5F11F80024B16D /* FaceppRecognition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppRecognition.m; sourceTree = "<group>"; };
+		9D518EE31C5F11F80024B16D /* FaceppTrainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppTrainer.h; sourceTree = "<group>"; };
+		9D518EE41C5F11F80024B16D /* FaceppTrainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppTrainer.m; sourceTree = "<group>"; };
+		9D518EE61C5F11F80024B16D /* FaceppError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppError.h; sourceTree = "<group>"; };
+		9D518EE71C5F11F80024B16D /* FaceppError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppError.m; sourceTree = "<group>"; };
+		9D518EE81C5F11F80024B16D /* FaceppResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceppResult.h; sourceTree = "<group>"; };
+		9D518EE91C5F11F80024B16D /* FaceppResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceppResult.m; sourceTree = "<group>"; };
 		9D6F94DC1C5331FE0036A25A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9D6F94DD1C533B8F0036A25A /* WeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WeatherModel.h; path = "温室助手/Model/WeatherModel.h"; sourceTree = SOURCE_ROOT; };
 		9D6F94DE1C533B8F0036A25A /* WeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WeatherModel.m; path = "温室助手/Model/WeatherModel.m"; sourceTree = SOURCE_ROOT; };
@@ -108,6 +145,8 @@
 		9D6F94ED1C534ADC0036A25A /* UIScrollView+Refresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Refresh.m"; sourceTree = "<group>"; };
 		9D6F94F21C53546F0036A25A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		9D6F94F31C53546F0036A25A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9D9D3AF41C5CCC4400F97A68 /* NewsShowTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsShowTableViewController.h; sourceTree = "<group>"; };
+		9D9D3AF51C5CCC4400F97A68 /* NewsShowTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsShowTableViewController.m; sourceTree = "<group>"; };
 		9DA11F461C559F0500D7FC33 /* GPSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPSManager.h; sourceTree = "<group>"; };
 		9DA11F471C559F0500D7FC33 /* GPSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPSManager.m; sourceTree = "<group>"; };
 		9DA11F491C55BF5500D7FC33 /* CityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CityModel.h; path = ../CityModel.h; sourceTree = "<group>"; };
@@ -242,8 +281,103 @@
 			children = (
 				9D3AA0361C5A44F0001D0223 /* NewsListViewController.h */,
 				9D3AA0371C5A44F0001D0223 /* NewsListViewController.m */,
+				9D9D3AF41C5CCC4400F97A68 /* NewsShowTableViewController.h */,
+				9D9D3AF51C5CCC4400F97A68 /* NewsShowTableViewController.m */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9D518EC91C5F09CB0024B16D /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				9D518ECB1C5F09F10024B16D /* ViewController */,
+				9D518ECA1C5F09E90024B16D /* View */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		9D518ECA1C5F09E90024B16D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D518ECB1C5F09F10024B16D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9D518ECC1C5F0A510024B16D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9D518ECE1C5F0A640024B16D /* ViewController */,
+				9D518ECD1C5F0A5D0024B16D /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9D518ECD1C5F0A5D0024B16D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D518ECE1C5F0A640024B16D /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9D518ECF1C5F11F80024B16D /* FaceppSDK_ARC */ = {
+			isa = PBXGroup;
+			children = (
+				9D518ED01C5F11F80024B16D /* FaceppAPI.h */,
+				9D518ED11C5F11F80024B16D /* FaceppAPI.m */,
+				9D518ED21C5F11F80024B16D /* FaceppAPISource */,
+				9D518EE51C5F11F80024B16D /* FaceppResult */,
+			);
+			path = FaceppSDK_ARC;
+			sourceTree = "<group>";
+		};
+		9D518ED21C5F11F80024B16D /* FaceppAPISource */ = {
+			isa = PBXGroup;
+			children = (
+				9D518ED31C5F11F80024B16D /* FaceppClient.h */,
+				9D518ED41C5F11F80024B16D /* FaceppClient.m */,
+				9D518ED51C5F11F80024B16D /* FaceppDetection.h */,
+				9D518ED61C5F11F80024B16D /* FaceppDetection.m */,
+				9D518ED71C5F11F80024B16D /* FaceppFaceset.h */,
+				9D518ED81C5F11F80024B16D /* FaceppFaceset.m */,
+				9D518ED91C5F11F80024B16D /* FaceppGroup.h */,
+				9D518EDA1C5F11F80024B16D /* FaceppGroup.m */,
+				9D518EDB1C5F11F80024B16D /* FaceppGrouping.h */,
+				9D518EDC1C5F11F80024B16D /* FaceppGrouping.m */,
+				9D518EDD1C5F11F80024B16D /* FaceppInfo.h */,
+				9D518EDE1C5F11F80024B16D /* FaceppInfo.m */,
+				9D518EDF1C5F11F80024B16D /* FaceppPerson.h */,
+				9D518EE01C5F11F80024B16D /* FaceppPerson.m */,
+				9D518EE11C5F11F80024B16D /* FaceppRecognition.h */,
+				9D518EE21C5F11F80024B16D /* FaceppRecognition.m */,
+				9D518EE31C5F11F80024B16D /* FaceppTrainer.h */,
+				9D518EE41C5F11F80024B16D /* FaceppTrainer.m */,
+			);
+			path = FaceppAPISource;
+			sourceTree = "<group>";
+		};
+		9D518EE51C5F11F80024B16D /* FaceppResult */ = {
+			isa = PBXGroup;
+			children = (
+				9D518EE61C5F11F80024B16D /* FaceppError.h */,
+				9D518EE71C5F11F80024B16D /* FaceppError.m */,
+				9D518EE81C5F11F80024B16D /* FaceppResult.h */,
+				9D518EE91C5F11F80024B16D /* FaceppResult.m */,
+			);
+			path = FaceppResult;
 			sourceTree = "<group>";
 		};
 		9DA716811C5741B70083819B /* WeatherList */ = {
@@ -459,6 +593,7 @@
 		9DCA52A31C50F91E00FF6DC3 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				9D518ECF1C5F11F80024B16D /* FaceppSDK_ARC */,
 				9D3AA0211C5A30D8001D0223 /* CLHeaderView.h */,
 				9D3AA0221C5A30D8001D0223 /* CLHeaderView.m */,
 			);
@@ -468,6 +603,8 @@
 		9DCA52AB1C50F98400FF6DC3 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				9D518ECC1C5F0A510024B16D /* Login */,
+				9D518EC91C5F09CB0024B16D /* Register */,
 				9D3AA0351C5A44B5001D0223 /* News */,
 				9DA716811C5741B70083819B /* WeatherList */,
 				9DCA52AC1C50F9A800FF6DC3 /* Main */,
@@ -729,26 +866,39 @@
 				9DA7168A1C5743C60083819B /* WeatherTableViewCell.m in Sources */,
 				9DCA525E1C50F64200FF6DC3 /* AppDelegate.m in Sources */,
 				9D3AA0301C5A353C001D0223 /* CityNetManager.m in Sources */,
+				9D9D3AF61C5CCC4400F97A68 /* NewsShowTableViewController.m in Sources */,
 				9D3AA0231C5A30D8001D0223 /* CLHeaderView.m in Sources */,
 				9D3AA0381C5A44F0001D0223 /* NewsListViewController.m in Sources */,
 				9DA716A51C57A4570083819B /* HeaderScrollView.m in Sources */,
 				9DA120AB1C5612A700D7FC33 /* WeatherIconManager.m in Sources */,
+				9D518EED1C5F11F80024B16D /* FaceppFaceset.m in Sources */,
+				9D518EF31C5F11F80024B16D /* FaceppTrainer.m in Sources */,
 				9DA11F4B1C55BF5500D7FC33 /* CityModel.m in Sources */,
 				9DCA52A41C50F91E00FF6DC3 /* AppDelegate+Category.m in Sources */,
+				9D518EF41C5F11F80024B16D /* FaceppError.m in Sources */,
 				9D6F94EE1C534ADC0036A25A /* Foundation+Log.m in Sources */,
+				9D518EEB1C5F11F80024B16D /* FaceppClient.m in Sources */,
 				9DABE8421C58F87C00F1C588 /* NewsSortModel.m in Sources */,
 				9DA716861C5742330083819B /* WeatherListViewController.m in Sources */,
 				9D6F94F11C534ADC0036A25A /* UIScrollView+Refresh.m in Sources */,
 				9D0447811C5B1DA300A0E295 /* NewsListTableViewCell.m in Sources */,
+				9D518EF21C5F11F80024B16D /* FaceppRecognition.m in Sources */,
 				9D3AA0341C5A377E001D0223 /* NewsNetManager.m in Sources */,
 				9DCA525B1C50F64200FF6DC3 /* main.m in Sources */,
 				9DA11F481C559F0500D7FC33 /* GPSManager.m in Sources */,
 				9DABE8451C58FA1F00F1C588 /* NewsListModel.m in Sources */,
+				9D518EF01C5F11F80024B16D /* FaceppInfo.m in Sources */,
+				9D518EEE1C5F11F80024B16D /* FaceppGroup.m in Sources */,
 				9D6F94E31C5349790036A25A /* BaseNetManager.m in Sources */,
+				9D518EEC1C5F11F80024B16D /* FaceppDetection.m in Sources */,
 				9DABE8481C58FBBB00F1C588 /* NewsShowModel.m in Sources */,
+				9D518EF11C5F11F80024B16D /* FaceppPerson.m in Sources */,
 				9D6F94EF1C534ADC0036A25A /* NSObject+AFNet.m in Sources */,
+				9D518EEF1C5F11F80024B16D /* FaceppGrouping.m in Sources */,
+				9D518EEA1C5F11F80024B16D /* FaceppAPI.m in Sources */,
 				9DCA52A71C50F91E00FF6DC3 /* Factory.m in Sources */,
 				9D04477C1C5AF12100A0E295 /* NewsListCollectionViewCell.m in Sources */,
+				9D518EF51C5F11F80024B16D /* FaceppResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

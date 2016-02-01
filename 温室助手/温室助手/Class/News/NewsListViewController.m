@@ -10,15 +10,26 @@
 #import "NewsNetManager.h"
 #import "CLHeaderView.h"
 #import "NewsListCollectionViewCell.h"
-@interface NewsListViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,CLHeaderViewDelegate>
+#import "NewsShowTableViewController.h"
+@interface NewsListViewController ()<UIScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,CLHeaderViewDelegate,NewsListDelegate>
 @property(strong,nonatomic) CLHeaderView *headerView;
 @property (strong,nonatomic) UICollectionView *collectionView;
 @property (strong,nonatomic) NSMutableArray *muArray;
 @property (strong,nonatomic) NewsSortModel *sort;
 @property (assign,nonatomic) NSInteger list_id;
+
 @end
 
 @implementation NewsListViewController
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"newsShow"]) {
+        NewsShowTableViewController *showTable = segue.destinationViewController;
+        NewsList *list = sender;
+        showTable.newsID = list.id;
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -74,17 +85,17 @@
 }
 
 - (void)creatUI{
-    CGFloat cellHeight = self.view.frame.size.height-(self.headerView.frame.origin.y+self.headerView.bounds.size.height);
+    CGFloat cellHeight = self.view.frame.size.height-(self.headerView.frame.origin.y+self.headerView.frame.size.height);
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
     
     //item行间距
     flowLayout.minimumLineSpacing = 0;//默认10
     flowLayout.minimumInteritemSpacing = 0;//默认10
     //设置统一大小的item
-    flowLayout.itemSize = CGSizeMake(self.view.frame.size.width,self.view.frame.size.height);//默认50
+    flowLayout.itemSize = CGSizeMake(self.view.frame.size.width,cellHeight);//默认50
     flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;//默认竖直滚动
     flowLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);//边距屏幕宽
-    CGRect collFrame = self.view.bounds;
+    CGRect collFrame = self.view.frame;
     collFrame.origin.y= 105;
     collFrame.size.height = cellHeight;
     UICollectionView * collectionView = [[UICollectionView alloc]initWithFrame:collFrame collectionViewLayout:flowLayout];
@@ -110,6 +121,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     NewsListCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"newscell" forIndexPath:indexPath];
+    cell.newsDelegate = self;
     cell.list_id = self.list_id;
     return cell;
 }
@@ -121,5 +133,8 @@
 	}
 	return _muArray;
 }
-
+-(void)tableView:(UITableView *)tableVW selectedInde:(NSIndexPath *)indexPath AndSendValue:(id)send
+{
+    [self performSegueWithIdentifier:@"newsShow" sender:send];
+}
 @end
